@@ -2,3 +2,7 @@ node_modules
 .DS_Store
 .env
 migrations
+seeds
+.expo
+.expo/packager-info.json
+expo
