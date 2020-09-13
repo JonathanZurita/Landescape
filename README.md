@@ -2,14 +2,14 @@
 Landescape is a landscape photography / hiking app for getting the best shot while traveling
 
 # Tech Stack
-React Native
-Expo
-Express
-Axios
-PostgresQL
-NodeJS
+* React Native
+* Expo
+* Express
+* Axios
+* PostgresQL
+* NodeJS
 
-#Benefits
+# Benefits
 * Take stunning photos of landscapes and post them to your profile while adding details about location, season, time and a description of your shot.
 * You can set your photo to public and the shot will then be added to a regional view where users can like or comment.
 * The region view is ranked by most liked photos
