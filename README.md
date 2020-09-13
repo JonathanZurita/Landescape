@@ -9,6 +9,12 @@ Landescape is a landscape photography / hiking app for getting the best shot whi
 * PostgresQL
 * NodeJS
 
+# Main Profile View
+![Profile View](/projectImg/profileView.png)
+
+# Map View
+![Map View](/projectImg/mapView.png)
+
 # Benefits
 * Take stunning photos of landscapes and post them to your profile while adding details about location, season, time and a description of your shot.
 * You can set your photo to public and the shot will then be added to a regional view where users can like or comment.
