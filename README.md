@@ -10,7 +10,7 @@ Landescape is a landscape photography / hiking app for getting the best shot whi
 * NodeJS
 
 # Main Profile View
-![Profile View](/projectImg/profileView.png | height=800 width=414)
+<img src="/projectImg/profileView.png" width="414" height="800">
 
 # Map View
 ![Map View](/projectImg/mapView.png)
