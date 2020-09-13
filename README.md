@@ -20,3 +20,7 @@ Landescape is a landscape photography / hiking app for getting the best shot whi
 * You can set your photo to public and the shot will then be added to a regional view where users can like or comment.
 * The region view is ranked by most liked photos
 * Users can find details about where to go, what trail to take and when to take the most stunning landscape pictures by region
+
+
+# Photo View
+<img src="/projectImg/photoView.gif" width="414" height="800">
