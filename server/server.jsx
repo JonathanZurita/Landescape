@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 const PORT = 7375;
 const db = require('../database/query.jsx');
-const path = require('path')
+
+var cors = require('cors');
+app.use(cors());
 
 const bodyParser=require('body-parser');
 
@@ -50,6 +52,29 @@ app.get("/photos", (req, res)=>{
       }
     })
     });
+
+    app.post("/register", (req, res)=>{
+      var params = [
+        req.body.password,
+        req.body.username,
+        req.body.region,
+        req.body.instagram,
+        req.body.description,
+        req.body.profileURL,
+        req.body.posts,
+        req.body.followers,
+        req.body.following
+    ];
+     db.register(params, (err, result)=>{
+       if (err){
+         console.log(err)
+         res.send(err, null)
+       } else {
+         console.log(result)
+         res.status(200).send(result)
+       }
+     })
+     });
 
 app.listen(PORT, (err, results)=> {
     if(err) {

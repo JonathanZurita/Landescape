@@ -24,6 +24,7 @@ const Register = ({ register }) => {
                 value={password}
                 placeholder="Password"
                 onChangeText={text => onPasswordChange(text)}
+                secureTextEntry
             />
             <TextInput
                 style={styles.input}
@@ -46,14 +47,12 @@ const Register = ({ register }) => {
                 onChangeText={text => onDescriptChange(text)}
             />
             <TouchableOpacity
-                style={styles.userBtn}
-                onPress={() => {register(password, username, region, instagram, description, "https://prrgetsearchbarfooter.s3.amazonaws.com/Tarcat.png", 'example', 1, 1)}}
+                style={styles.button}
+                onPress={() => {register(password, username, region, instagram, description, "https://prrgetsearchbarfooter.s3.amazonaws.com/Tarcat.png", 10, 1, 1)}}
             >
             <Text style={styles.userBtnTxt}>Signup</Text>
         </TouchableOpacity>
-
         </View>
-
     )
 
 }
@@ -62,24 +61,30 @@ export default Register;
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      paddingLeft: 12,
-      alignItems: 'center',
-      justifyContent: 'center',
-      backgroundColor: 'blue'
+        flex: 1,
+        paddingLeft: 12,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'blue'
     },
     button: {
-      color: 'white',
-      textAlign: 'center',
-      backgroundColor: 'hotpink',
-      padding: 20,
-      width: 180,
-      borderRadius: 10,
-      marginTop: 80,
-      marginBottom: 20,
+        color: 'white',
+        textAlign: 'center',
+        backgroundColor: 'hotpink',
+        padding: 20,
+        width: 180,
+        borderRadius: 10,
+        marginTop: 80,
+        marginBottom: 20,
     },
     trailBtnTxt: {
-      fontSize: 20,
-      textAlign: "center"
-    } 
-  });
+        fontSize: 20,
+        textAlign: "center"
+    },
+    input: {
+        backgroundColor: 'white',
+        width: 300,
+        padding: 20,
+        marginTop: 5
+    }
+});

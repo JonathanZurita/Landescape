@@ -58,6 +58,19 @@ const getPhotos = (cb) => {
     })
   }
 
+  const register = (data, cb) => {
+    console.log('hello')
+    connection.query(`insert into "user" (password, username, region, instagram, description, profile_url, posts, followers,following) VALUES ('${params[0]}','${params[1]}','${params[2]}','${params[3]}','${params[4]}','${params[5]}','${params[6]}','${params[7]}','${params[8]}')`, data, (error, results)=>{
+      if (error) {
+        console.log(data);
+        cb(error, null);
+      } else {
+          console.log('success querying the DB on postres query file')
+        cb(null, results);
+      }
+    })
+  }
+
 module.exports = {
-    getPhotos, getRegionPhotos, getRegionName
+    getPhotos, getRegionPhotos, getRegionName, register
 }
