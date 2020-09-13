@@ -13,7 +13,7 @@ Landescape is a landscape photography / hiking app for getting the best shot whi
 <img src="/projectImg/profileView.png" width="414" height="800">
 
 # Map View
-![Map View](/projectImg/mapView.png)
+<img src="/projectImg/mapView.png" width="414" height="800">
 
 # Benefits
 * Take stunning photos of landscapes and post them to your profile while adding details about location, season, time and a description of your shot.
