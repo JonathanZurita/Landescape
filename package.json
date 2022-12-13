@@ -33,7 +33,7 @@
     "expo-blur": "~8.1.2",
     "expo-media-library": "~8.2.1",
     "expo-status-bar": "^1.0.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "faker": "^4.1.0",
     "googlephotos": "^0.3.0",
     "graphql": "^15.3.0",
